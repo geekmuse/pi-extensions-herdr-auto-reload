@@ -1,0 +1,22 @@
+{
+  "name": "pi-herdr-auto-reload",
+  "version": "0.1.0",
+  "description": "Reload every live Pi session managed by the current Herdr server.",
+  "type": "module",
+  "keywords": ["pi-package", "pi-extension", "herdr"],
+  "files": ["dist", "README.md"],
+  "pi": {
+    "extensions": ["./dist/index.js"]
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/**/*.test.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.4",
+    "typescript": "^5.9.3"
+  }
+}
