@@ -1,12 +1,21 @@
 {
   "name": "pi-herdr-auto-reload",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Reload every live Pi session managed by the current Herdr server.",
   "type": "module",
-  "keywords": ["pi-package", "pi-extension", "herdr"],
-  "files": ["dist", "README.md"],
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "herdr"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "pi": {
-    "extensions": ["./dist/index.js"]
+    "extensions": [
+      "./dist/index.js"
+    ]
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",

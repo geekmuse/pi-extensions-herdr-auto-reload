@@ -10,6 +10,10 @@ Run the command from a Herdr-managed Pi pane to:
 
 Blocked or unavailable sessions are reported but do not prevent the invoking session from reloading. The command is intentionally unavailable outside a Herdr-managed pane.
 
+## Prompt-buffer preservation
+
+Before the invoking session reloads, the command saves any unsubmitted TUI prompt text in a custom entry in Pi's on-disk session JSONL, then clears the editor. The reloaded extension restores that text during `session_start` and records the restoration. If restoration cannot proceed (for example, the editor is unexpectedly nonempty), the pending recovery entry remains durable for a later reload or restart; it is never overwritten.
+
 ## Install
 
 For local development:
