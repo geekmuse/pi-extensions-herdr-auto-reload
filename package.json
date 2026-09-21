@@ -1,16 +1,30 @@
 {
   "name": "pi-herdr-auto-reload",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Reload every live Pi session managed by the current Herdr server.",
   "type": "module",
+  "license": "MIT",
+  "author": "bradmatic",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradmatic/pi-extensions-herdr-auto-reload.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bradmatic/pi-extensions-herdr-auto-reload/issues"
+  },
+  "homepage": "https://github.com/bradmatic/pi-extensions-herdr-auto-reload#readme",
   "keywords": [
     "pi-package",
     "pi-extension",
     "herdr"
   ],
+  "engines": {
+    "node": ">=18"
+  },
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "pi": {
     "extensions": [
@@ -19,7 +33,7 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "npm run build && node --test test/**/*.test.mjs"
+    "test": "npm run build && node --test"
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*"
