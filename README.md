@@ -27,7 +27,7 @@ This is only possible in interactive TUI sessions: Pi's RPC mode cannot read the
 From GitHub:
 
 ```bash
-pi install https://github.com/bradmatic/pi-extensions-herdr-auto-reload
+pi install https://github.com/geekmuse/pi-extensions-herdr-auto-reload
 ```
 
 For local development:

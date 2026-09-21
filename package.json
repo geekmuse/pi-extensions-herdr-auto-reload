@@ -7,12 +7,12 @@
   "author": "bradmatic",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bradmatic/pi-extensions-herdr-auto-reload.git"
+    "url": "git+https://github.com/geekmuse/pi-extensions-herdr-auto-reload.git"
   },
   "bugs": {
-    "url": "https://github.com/bradmatic/pi-extensions-herdr-auto-reload/issues"
+    "url": "https://github.com/geekmuse/pi-extensions-herdr-auto-reload/issues"
   },
-  "homepage": "https://github.com/bradmatic/pi-extensions-herdr-auto-reload#readme",
+  "homepage": "https://github.com/geekmuse/pi-extensions-herdr-auto-reload#readme",
   "keywords": [
     "pi-package",
     "pi-extension",
